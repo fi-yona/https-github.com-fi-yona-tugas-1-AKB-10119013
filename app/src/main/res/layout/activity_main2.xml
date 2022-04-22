@@ -7,8 +7,38 @@
     tools:context=".Main2Activity">
 
     <TextView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:text="test"/>
+        android:id="@+id/login"
+        android:layout_width="150dp"
+        android:layout_height="45dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="30dp"
+        android:text="LOGIN"
+        android:gravity="center_horizontal|center_vertical"
+        />
+
+    <!--
+    Font family: Inter
+    Line height: 24sp
+    -->
+    <!-- styles.xml -->
+    <style name="login">
+
+        <item name="android:textSize">
+            20sp
+        </item>
+
+        <item name="android:textColor">
+            #E88846
+        </item>
+
+    </style>
+
+
+    <!-- strings.xml -->
+    <string name="login">
+
+        LOGIN
+    </string>
 
 </RelativeLayout>
