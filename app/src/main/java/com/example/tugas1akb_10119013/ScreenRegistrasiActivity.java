@@ -10,11 +10,16 @@ import android.widget.EditText;
 import android.widget.TextView;
 import android.widget.Toast;
 
+//nim                   = 10119013
+//nama                  = Fiona Avila Putri
+//kelas                 = IF-1
+//tanggal pengerjaan    = 22-04-2022
+
 public class ScreenRegistrasiActivity extends AppCompatActivity {
 
     private Button btn_kembali_login, btn_daftarkan;
     private EditText input_username_regis, input_password_regis;
-    private String username_regis, password_regis;
+    public String data_username, data_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -45,12 +50,12 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
         btn_daftarkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                username_regis = input_username_regis.getText().toString();
-                password_regis = input_password_regis.getText().toString();
+                data_username = input_username_regis.getText().toString();
+                data_password = input_password_regis.getText().toString();
 
                 Intent intent = new Intent(ScreenRegistrasiActivity.this, Main2Activity.class);
-                intent.putExtra("username_regis", username_regis);
-                intent.putExtra("password_regis", password_regis);
+                intent.putExtra("username", data_username);
+                intent.putExtra("password", data_password);
                 startActivity(intent);
                 Toast.makeText(ScreenRegistrasiActivity.this, "berhasil didaftarkan!", Toast.LENGTH_SHORT).show();
             }

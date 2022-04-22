@@ -85,7 +85,7 @@
         android:background="@drawable/backgroud_input"
         android:ems="10"
         android:inputType="textPassword"
-        android:textColor="#E88846"/>
+        android:textColor="#E88846" />
 
     <Button
         android:id="@+id/btn_daftarkan"

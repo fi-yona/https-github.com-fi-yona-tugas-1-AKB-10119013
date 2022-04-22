@@ -7,6 +7,11 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 
+//nim                   = 10119013
+//nama                  = Fiona Avila Putri
+//kelas                 = IF-1
+//tanggal pengerjaan    = 22-04-2022
+
 public class ScreenProfileActivity extends AppCompatActivity {
 
     private Button btn_kembali_menu;
