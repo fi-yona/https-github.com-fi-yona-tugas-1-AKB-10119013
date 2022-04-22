@@ -7,38 +7,153 @@
     tools:context=".Main2Activity">
 
     <TextView
-        android:id="@+id/login"
+        android:id="@+id/title_login"
         android:layout_width="150dp"
-        android:layout_height="45dp"
-        android:layout_centerHorizontal="true"
+        android:layout_height="50dp"
         android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
         android:layout_marginTop="30dp"
-        android:text="LOGIN"
+        android:fontFamily="sans-serif"
         android:gravity="center_horizontal|center_vertical"
-        />
+        android:lineHeight="24sp"
+        android:text="LOGIN"
+        android:textColor="#E88846"
+        android:textSize="20sp"
+        android:textStyle="bold" />
 
-    <!--
-    Font family: Inter
-    Line height: 24sp
-    -->
-    <!-- styles.xml -->
-    <style name="login">
+    <TextView
+        android:id="@+id/title_username"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="40dp"
+        android:layout_marginTop="114dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineHeight="17sp"
+        android:text="Username"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
-        <item name="android:textSize">
-            20sp
-        </item>
+    <EditText
+        android:id="@+id/input_username"
+        android:layout_width="167dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="116dp"
+        android:layout_marginRight="40dp"
+        android:width="169dp"
+        android:height="31dp"
+        android:background="@drawable/backgroud_input"
+        android:strokeWidth="2"
+        android:strokeColor="#E88846"
+        android:textColor="#E88846"
+        android:viewportWidth="169"
+        android:viewportHeight="31"
+        tools:ignore="SpeakableTextPresentCheck" />
 
-        <item name="android:textColor">
-            #E88846
-        </item>
+    <TextView
+        android:id="@+id/title_password"
+        android:layout_width="85dp"
+        android:layout_height="33dp"
+        android:layout_below="@id/title_username"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="41dp"
+        android:layout_marginTop="157dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineHeight="17sp"
+        android:text="Password"
+        android:textAllCaps="false"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
-    </style>
+    <EditText
+        android:id="@+id/input_password"
+        android:layout_width="167dp"
+        android:layout_height="30dp"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="158dp"
+        android:layout_marginRight="40dp"
+        android:background="@drawable/backgroud_input"
+        android:ems="10"
+        android:inputType="textPassword"
+        android:textColor="#E88846"/>
 
+    <Button
+        android:id="@+id/btn_masuk"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/input_password"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="220dp"
+        android:width="169dp"
+        android:height="31dp"
+        android:backgroundTint="#E88846"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif"
+        android:shadowRadius="10"
+        android:text="MASUK"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textColorHighlight="#E88846"
+        android:textColorLink="#E88846"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:viewportWidth="169"
 
-    <!-- strings.xml -->
-    <string name="login">
+        android:viewportHeight="31"
+        app:cornerRadius="5dp" />
 
-        LOGIN
-    </string>
+    <TextView
+        android:id="@+id/belum_punya"
+        android:layout_width="157dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="128dp"
+        android:layout_marginTop="600sp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal"
+        android:lineHeight="17sp"
+        android:text="Belum punya akun?"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
 
+    <Button
+        android:id="@+id/btn_registrasi"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_below="@id/belum_punya"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="620sp"
+        android:width="169dp"
+        android:height="31dp"
+        android:backgroundTint="#E88846"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif"
+        android:shadowRadius="10"
+        android:text="REGISTRASI"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textColorHighlight="#E88846"
+        android:textColorLink="#E88846"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:viewportWidth="169"
+
+        android:viewportHeight="31"
+        app:cornerRadius="5dp" />
 </RelativeLayout>
