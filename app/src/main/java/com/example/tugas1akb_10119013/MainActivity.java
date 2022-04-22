@@ -10,27 +10,30 @@ import android.widget.Button;
 //nim                   = 10119013
 //nama                  = Fiona Avila Putri
 //kelas                 = IF-1
-//tanggal pengerjaan    = 21-04-2022
+//tanggal pengerjaan    = 22-04-2022
 
-public class MainActivity extends AppCompatActivity {
+public class ScreenMenuActivity extends AppCompatActivity {
 
-    private Button btn_ayo_mulai;
+    private Button btn_profile;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_screen_menu);
 
-        //inisialisasi
-        btn_ayo_mulai = findViewById(R.id.btn_ayo_mulai);
+        btn_profile = findViewById(R.id.btn_profile);
 
-        btn_ayo_mulai.setOnClickListener(new View.OnClickListener() {
+        btn_profile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ScreenRegistrasiActivity.class);
-                startActivity(i);
+                Intent ip = new Intent(ScreenMenuActivity.this, ScreenProfileActivity.class);
+                startActivity(ip);
             }
         });
     }
 
+    public void logout(View view){
+        Intent il = new Intent(ScreenMenuActivity.this, LoginActivity.class);
+        startActivity(il);
+    }
 }

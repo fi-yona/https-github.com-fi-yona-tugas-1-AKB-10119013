@@ -7,8 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.TextView;
-import android.widget.Toast;
 
 //nim                   = 10119013
 //nama                  = Fiona Avila Putri
@@ -31,7 +29,7 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
         btn_kembali_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ikl = new Intent(ScreenRegistrasiActivity.this, Main2Activity.class);
+                Intent ikl = new Intent(ScreenRegistrasiActivity.this, LoginActivity.class);
                 startActivity(ikl);
             }
         });
@@ -48,7 +46,7 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
         btn_daftarkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ScreenRegistrasiActivity.this, Main2Activity.class);
+                Intent i = new Intent(ScreenRegistrasiActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });
