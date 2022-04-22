@@ -4,10 +4,10 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".Main2Activity">
+    tools:context=".ScreenRegistrasiActivity">
 
     <TextView
-        android:id="@+id/title_login"
+        android:id="@+id/title_registrasi"
         android:layout_width="150dp"
         android:layout_height="50dp"
         android:layout_alignParentTop="true"
@@ -16,13 +16,13 @@
         android:fontFamily="sans-serif"
         android:gravity="center_horizontal|center_vertical"
         android:lineHeight="24sp"
-        android:text="LOGIN"
+        android:text="REGISTRASI"
         android:textColor="#E88846"
         android:textSize="20sp"
         android:textStyle="bold" />
 
     <TextView
-        android:id="@+id/title_username_login"
+        android:id="@+id/title_username_regis"
         android:layout_width="85dp"
         android:layout_height="33dp"
         android:layout_alignParentStart="true"
@@ -39,7 +39,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/input_username_login"
+        android:id="@+id/input_username_regis"
         android:layout_width="167dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
@@ -57,10 +57,10 @@
         tools:ignore="SpeakableTextPresentCheck" />
 
     <TextView
-        android:id="@+id/title_password_login"
+        android:id="@+id/title_password_regis"
         android:layout_width="85dp"
         android:layout_height="33dp"
-        android:layout_below="@id/title_username_login"
+        android:layout_below="@id/title_username_regis"
         android:layout_alignParentLeft="true"
         android:layout_alignParentTop="true"
         android:layout_marginLeft="41dp"
@@ -75,7 +75,7 @@
         android:textStyle="bold" />
 
     <EditText
-        android:id="@+id/input_password_login"
+        android:id="@+id/input_password_regis"
         android:layout_width="167dp"
         android:layout_height="30dp"
         android:layout_alignParentTop="true"
@@ -88,10 +88,10 @@
         android:textColor="#E88846"/>
 
     <Button
-        android:id="@+id/btn_masuk"
+        android:id="@+id/btn_daftarkan"
         android:layout_width="167dp"
         android:layout_height="40dp"
-        android:layout_below="@id/input_password_login"
+        android:layout_below="@id/input_password_regis"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="220dp"
@@ -101,7 +101,7 @@
         android:elevation="4dp"
         android:fontFamily="sans-serif"
         android:shadowRadius="10"
-        android:text="MASUK"
+        android:text="DAFTARKAN"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#000000"
@@ -114,27 +114,10 @@
         android:viewportHeight="31"
         app:cornerRadius="5dp" />
 
-    <TextView
-        android:id="@+id/belum_punya"
-        android:layout_width="157dp"
-        android:layout_height="33dp"
-        android:layout_alignParentTop="true"
-        android:layout_centerHorizontal="true"
-        android:layout_marginLeft="128dp"
-        android:layout_marginTop="600sp"
-        android:fontFamily="sans-serif"
-        android:gravity="center_horizontal"
-        android:lineHeight="17sp"
-        android:text="Belum punya akun?"
-        android:textColor="#E88846"
-        android:textSize="14sp"
-        android:textStyle="bold" />
-
     <Button
-        android:id="@+id/btn_registrasi"
+        android:id="@+id/btn_kembali_login"
         android:layout_width="167dp"
         android:layout_height="40dp"
-        android:layout_below="@id/belum_punya"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="620sp"
@@ -144,7 +127,7 @@
         android:elevation="4dp"
         android:fontFamily="sans-serif"
         android:shadowRadius="10"
-        android:text="REGISTRASI"
+        android:text="KEMBALI KE LOGIN"
         android:textAlignment="center"
         android:textAllCaps="true"
         android:textColor="#000000"
@@ -156,4 +139,5 @@
 
         android:viewportHeight="31"
         app:cornerRadius="5dp" />
+
 </RelativeLayout>

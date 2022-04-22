@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1AKB10119013">
         <activity
+            android:name=".ScreenMenuActivity"
+            android:exported="false" />
+        <activity
+            android:name=".ScreenRegistrasiActivity"
+            android:exported="false" />
+        <activity
             android:name=".Main2Activity"
             android:exported="false" />
         <activity
