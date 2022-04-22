@@ -19,7 +19,7 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
 
     private Button btn_kembali_login, btn_daftarkan;
     private EditText input_username_regis, input_password_regis;
-    public String data_username, data_password;
+    private String data_username, data_password;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -42,23 +42,16 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
 
     public void initView(){
         btn_daftarkan = findViewById(R.id.btn_daftarkan);
-        input_username_regis = findViewById(R.id.input_username_regis);
-        input_password_regis = findViewById(R.id.input_password_regis);
     }
 
     public void setData(){
         btn_daftarkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                data_username = input_username_regis.getText().toString();
-                data_password = input_password_regis.getText().toString();
-
-                Intent intent = new Intent(ScreenRegistrasiActivity.this, Main2Activity.class);
-                intent.putExtra("username", data_username);
-                intent.putExtra("password", data_password);
-                startActivity(intent);
-                Toast.makeText(ScreenRegistrasiActivity.this, "berhasil didaftarkan!", Toast.LENGTH_SHORT).show();
+                Intent i = new Intent(ScreenRegistrasiActivity.this, Main2Activity.class);
+                startActivity(i);
             }
         });
+
     }
 }
