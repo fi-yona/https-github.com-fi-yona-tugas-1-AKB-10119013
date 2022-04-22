@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ScreenProfileActivity">
+
+    <TextView
+        android:id="@+id/title_profile"
+        android:layout_width="150dp"
+        android:layout_height="50dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="30dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_horizontal|center_vertical"
+        android:lineHeight="24sp"
+        android:text="PROFILE"
+        android:textColor="#E88846"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <ImageView
+        android:id="@+id/img_profile"
+        app:srcCompat="@drawable/img_1"
+        android:layout_width="130dp"
+        android:layout_height="180dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:clipToOutline="true"/>
+
+    <TextView
+        android:id="@+id/title_nim_profile"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="250dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:text="NIM"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/input_nim_profile"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="250dp"
+        android:layout_marginLeft="170dp"
+        android:text="10119013"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"/>
+
+    <TextView
+        android:id="@+id/title_nama_profile"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="285dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:text="NAMA"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/input_nama_profile"
+        android:layout_width="130dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="285dp"
+        android:layout_marginLeft="170dp"
+        android:text="FIONA AVILA PUTRI"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:layout_alignParentStart="true"/>
+
+    <TextView
+        android:id="@+id/title_kelas_profile"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="100dp"
+        android:layout_marginTop="320dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:text="KELAS"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/input_kelas_profile"
+        android:layout_width="65dp"
+        android:layout_height="33dp"
+        android:layout_centerHorizontal="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="320dp"
+        android:layout_marginLeft="170dp"
+        android:text="IF-1"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="17sp"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:layout_alignParentLeft="true"/>
+
+    <View
+        android:id="@+id/view_deskripsi"
+        android:layout_width="287dp"
+        android:layout_height="150dp"
+        android:layout_centerHorizontal="true"
+        android:layout_marginLeft="73dp"
+        android:layout_marginTop="367dp"
+        android:background="@drawable/background_deskripsi" />
+
+    <TextView
+        android:id="@+id/title_deskripsi"
+        android:layout_width="140dp"
+        android:layout_height="33dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="380dp"
+        android:fontFamily="sans-serif"
+        android:lineHeight="17sp"
+        android:text="deskripsi diri"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#E88846"
+        android:textSize="14sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/isi_deskripsi"
+        android:layout_width="267dp"
+        android:layout_height="84dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="410dp"
+        android:fontFamily="sans-serif"
+        android:gravity="center_vertical"
+        android:lineHeight="15sp"
+        android:text="Saya berasal dari Padang, Sumatera Barat. Saya lahir pada tahun 2001 dan pada tahun ini saya menginjak usia 21 tahun. Saya saat ini sedang menempuh pendidikan di Universitas Komputer Indonesia."
+        android:textColor="#E88846"
+        android:textSize="13sp" />
+
+    <Button
+        android:id="@+id/btn_kembali_menu"
+        android:layout_width="167dp"
+        android:layout_height="40dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="550dp"
+        android:width="169dp"
+        android:height="31dp"
+        android:backgroundTint="#E88846"
+        android:elevation="4dp"
+        android:fontFamily="sans-serif"
+        android:shadowRadius="10"
+        android:text="KEMBALI KE MENU"
+        android:textAlignment="center"
+        android:textAllCaps="true"
+        android:textColor="#000000"
+        android:textColorHighlight="#E88846"
+        android:textColorLink="#E88846"
+        android:textSize="12dp"
+        android:textStyle="bold"
+        android:viewportWidth="169"
+        android:viewportHeight="31"
+        app:cornerRadius="5dp" />
+
+</RelativeLayout>
