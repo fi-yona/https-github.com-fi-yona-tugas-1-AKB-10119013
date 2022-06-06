@@ -7,14 +7,13 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
 
 //nim                   = 10119013
 //nama                  = Fiona Avila Putri
 //kelas                 = IF-1
 //tanggal pengerjaan    = 22-04-2022
 
-public class Main2Activity extends AppCompatActivity {
+public class LoginActivity extends AppCompatActivity {
 
     private Button btn_masuk;
     private Button btn_registrasi;
@@ -25,7 +24,7 @@ public class Main2Activity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main2);
+        setContentView(R.layout.activity_login);
 
         initView();
         setData();
@@ -40,7 +39,7 @@ public class Main2Activity extends AppCompatActivity {
         btn_masuk.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main2Activity.this, ScreenMenuActivity.class);
+                Intent intent = new Intent(LoginActivity.this, MainActivity.class);
                 startActivity(intent);
             }
         });
@@ -48,7 +47,7 @@ public class Main2Activity extends AppCompatActivity {
         btn_registrasi.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent intent = new Intent(Main2Activity.this, ScreenRegistrasiActivity.class);
+                Intent intent = new Intent(LoginActivity.this, RegistrationActivity.class);
                 startActivity(intent);
             }
         });

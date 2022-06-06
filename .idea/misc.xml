@@ -5,11 +5,13 @@
       <map>
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/drawable/backgroud_input.xml" value="0.2075" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/drawable/background_deskripsi.xml" value="0.2075" />
+        <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_login.xml" value="0.14947916666666666" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_main2.xml" value="0.25" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_screen_menu.xml" value="0.25" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_screen_profile.xml" value="0.25" />
         <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_screen_registrasi.xml" value="0.2" />
+        <entry key="..\:/Users/fiona/AndroidStudioProjects/Tugas1AKB10119013/app/src/main/res/layout/activity_splash_screen.xml" value="0.14947916666666666" />
       </map>
     </option>
   </component>

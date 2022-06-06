@@ -12,14 +12,14 @@ import android.widget.Button;
 //kelas                 = IF-1
 //tanggal pengerjaan    = 21-04-2022
 
-public class MainActivity extends AppCompatActivity {
+public class SplashScreenActivity extends AppCompatActivity {
 
     private Button btn_ayo_mulai;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_main);
+        setContentView(R.layout.activity_splash_screen);
 
         //inisialisasi
         btn_ayo_mulai = findViewById(R.id.btn_ayo_mulai);
@@ -27,7 +27,7 @@ public class MainActivity extends AppCompatActivity {
         btn_ayo_mulai.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(MainActivity.this, ScreenRegistrasiActivity.class);
+                Intent i = new Intent(SplashScreenActivity.this, RegistrationActivity.class);
                 startActivity(i);
             }
         });

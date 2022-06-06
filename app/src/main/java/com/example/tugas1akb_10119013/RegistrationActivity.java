@@ -13,7 +13,7 @@ import android.widget.EditText;
 //kelas                 = IF-1
 //tanggal pengerjaan    = 22-04-2022
 
-public class ScreenRegistrasiActivity extends AppCompatActivity {
+public class RegistrationActivity extends AppCompatActivity {
 
     private Button btn_kembali_login, btn_daftarkan;
     private EditText input_username_regis, input_password_regis;
@@ -22,14 +22,14 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_registrasi);
+        setContentView(R.layout.activity_registration);
 
         btn_kembali_login = findViewById(R.id.btn_kembali_login);
 
         btn_kembali_login.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ikl = new Intent(ScreenRegistrasiActivity.this, LoginActivity.class);
+                Intent ikl = new Intent(RegistrationActivity.this, LoginActivity.class);
                 startActivity(ikl);
             }
         });
@@ -46,7 +46,7 @@ public class ScreenRegistrasiActivity extends AppCompatActivity {
         btn_daftarkan.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent i = new Intent(ScreenRegistrasiActivity.this, LoginActivity.class);
+                Intent i = new Intent(RegistrationActivity.this, LoginActivity.class);
                 startActivity(i);
             }
         });

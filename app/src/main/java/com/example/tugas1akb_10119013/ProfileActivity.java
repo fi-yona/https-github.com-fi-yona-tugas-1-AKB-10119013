@@ -12,21 +12,21 @@ import android.widget.Button;
 //kelas                 = IF-1
 //tanggal pengerjaan    = 22-04-2022
 
-public class ScreenProfileActivity extends AppCompatActivity {
+public class ProfileActivity extends AppCompatActivity {
 
     private Button btn_kembali_menu;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_screen_profile);
+        setContentView(R.layout.activity_profile);
 
         btn_kembali_menu = findViewById(R.id.btn_kembali_menu);
 
         btn_kembali_menu.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Intent ikm  = new Intent(ScreenProfileActivity.this, ScreenMenuActivity.class);
+                Intent ikm  = new Intent(ProfileActivity.this, MainActivity.class);
                 startActivity(ikm);
             }
         });

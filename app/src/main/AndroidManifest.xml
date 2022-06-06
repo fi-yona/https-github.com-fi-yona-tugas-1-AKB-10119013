@@ -10,19 +10,19 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.Tugas1AKB10119013">
         <activity
-            android:name=".ScreenProfileActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ScreenMenuActivity"
-            android:exported="false" />
-        <activity
-            android:name=".ScreenRegistrasiActivity"
-            android:exported="false" />
-        <activity
-            android:name=".Main2Activity"
+            android:name=".ProfileActivity"
             android:exported="false" />
         <activity
             android:name=".MainActivity"
+            android:exported="false" />
+        <activity
+            android:name=".RegistrationActivity"
+            android:exported="false" />
+        <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SplashScreenActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
